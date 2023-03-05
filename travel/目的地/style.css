@@ -1,0 +1,629 @@
+/* 设置通用样式 */
+*{
+   margin:0;
+   padding:0;
+   list-style-type: none;
+   text-decoration: none;
+}
+
+html{
+   /* 设置css平滑滚动 在点击箭头平滑过渡*/
+   scroll-behavior:smooth;
+}
+
+body{
+   /* 宽度占满屏 */
+   width:100vw;
+   overflow-x: hidden;
+}
+
+/* 鼠标移入样式 */
+.active{
+   color: rgb(53,168,214);
+   border-bottom: 2px solid rgb(53,168,214);
+}
+
+
+/* 网页头部，导航栏 */
+
+
+/* flexBox布局（默认向右排列，代替传统float流） */
+.nav{
+   position: absolute;
+   display: flex;
+   width:100%;
+   height:60px;
+   /* 设置横向排列方式 */
+   justify-content: space-around;
+   background-color: rgba(0,0,0,0);
+   color: white;
+}
+
+.nav:hover{
+   background-color: white;
+   color: black;
+}
+
+/* 统一设置导航栏选项样式 */
+.nav>div>span{
+   /* span、li、p...默认是行内元素，由内容撑开，无法设置高度，想设置高度必须设置display:block（盒式元素）*/
+   display: block;
+   height:57px;
+   line-height: 57px;
+   width:100px;
+   text-align: center;
+}
+
+.nav>.nav-middle>span:hover{
+   border-bottom:3px solid rgb(53,168,214);
+   color: rgb(53,168,214);
+}
+
+.nav>.nav-middle>span:nth-child(2):hover{
+   border-bottom:none;
+}
+
+.nav>.nav-left{
+   font-size: 25px;
+}
+
+/* 水平排列 */
+.nav>.nav-middle{
+   display: flex;
+}
+
+.nav>.nav-right{
+   display: flex;
+   align-items: center;
+   width:250px;
+   font-size:12px;
+   color: rgba(174, 166, 166, 0.867);
+}
+
+.nav>.nav-right>input{
+   text-indent: 0.5cm;
+   width:150px;
+   height:25px;
+   border: 0;
+   outline:0;
+   background-color: #e7e1e1;
+   transition: 0.5s;
+}
+
+.nav>.nav-right>.stick{
+   width:300px;
+}
+
+
+/* ---------- */
+
+.cover{
+   /* flexBox 布局 */
+   display: flex;
+   /* 向下排列 */
+   flex-direction: column;
+   /* 水平居中 */
+   align-items: center;
+   width:100vw;
+   height:520px;
+   background-color: aqua;
+}
+
+.cover>img{
+   width:100vw;
+   height:550px;
+   object-fit: cover; 
+}
+
+.cover>.cover-title{
+   position: absolute;
+   left:0;
+   top:200px;
+   display: flex;
+   /* 对称分布 */
+   justify-content: space-around;
+   /* 垂直居中 */
+   align-items: center;
+   width:100%;
+   height:200px;
+}
+
+.cover>.cover-title>.cover-input{
+   display: flex;
+   /* 竖直排列 */
+   flex-direction: column;
+   justify-content: space-around;
+   width:350px;
+   height:150px;
+   background-color:rgba(5, 5, 5, 0.511);
+   /* 设置30px左内边距 */
+   padding:0 0 0 30px;
+   /* 圆角特效 */
+   border-radius: 5px;
+}
+
+.cover>.cover-title>.cover-input>h1{
+   color: white;
+   font-size: 23px;
+}
+
+.cover>.cover-title>.cover-input>input{
+   width:300px;
+   height:35px;
+   /* 圆角特效 */
+   border-radius: 5px;
+   /* 设置无黑色边框 */
+   border: 0;
+   outline: none;
+}
+
+.cover>.cover-title>.cover-input>div{
+   display:flex;
+   gap:10px;
+   color: white;
+}
+
+.cover>.cover-title>.cover-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height:100%;
+   width:500px;
+   color:white;
+   border-right: 5px solid white;
+   padding:0 30px;
+}
+
+.cover>.cover-title>.cover-content>a{
+   color: white;
+   text-decoration:underline;
+}
+
+.cover>.cover-bottom{
+   position: absolute;
+   left:0;
+   top:460px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height:80px;
+}
+
+.cover>.cover-bottom>div{
+   display: flex;
+   /* 竖直对齐 */
+   align-items: center;
+   /* 间隔 */
+   gap:15px;
+}
+
+.cover>.cover-bottom>div>div{
+   width:25px;
+   height:25px;
+   /* 设置成圆形 */
+   border-radius: 50%;
+   /* 边框 */
+   border: 1px solid white;
+   /* 叹号水平竖直居中 */
+   text-align: center;
+   line-height: 25px;
+   color: white;
+}
+
+.cover>.cover-bottom>div>span{
+   display: block;
+   width:70px;
+   height:25px;
+   /* 文字水平竖直居中 */
+   text-align: center;
+   line-height:25px;
+   /* 边框 */
+   border: 1px solid white;
+   color: white;
+}
+
+/* 箭头 */
+.cover>.cover-bottom>a{
+   display: block;
+   width:60px;
+   height:60px;
+}
+
+.cover>.cover-bottom>a>img{
+   display: block;
+   width:60px;
+   height:60px;
+   object-fit: cover;
+   margin-top:-35px;
+}
+
+
+
+
+
+
+/* 热门目的地样式 */
+
+#hot-place{
+   display: flex;
+   flex-direction: column;
+   /* 水平居中 */
+   align-items: center;
+   width:100vw;
+   /* 设置最小高度 */
+   min-height:300px;
+   box-shadow:0 0 2px 0 #8a8585;
+   margin-top:30px;
+}
+
+/* 标题 */
+#hot-place>h1{
+   margin-top:30px;
+}
+
+
+/* 选项 */
+#hot-place>.hot-option{
+   margin-top:30px;
+   display: flex;
+   width:910px;
+   height:35px;
+}
+
+#hot-place>.hot-option>span{
+   width:130px;
+   height:50px;
+   font-size:19px;
+   text-align: center;
+   line-height: 50px;
+}
+
+#hot-place>.hot-option>span:hover{
+   color: rgb(53,168,214);
+   border-bottom: 2px solid rgb(53,168,214);
+}
+
+#hot-place>.place{
+   margin-top:50px;
+   /* 设置最小高度，可由内容撑开 */
+   min-height:150px;
+   width:1100px;
+}
+
+/* 七个容器共同样式 */
+#hot-place>.place>.detail{
+   display: none;
+   /* 内容超出容器会换行 */
+   flex-wrap: wrap;
+   /* 水平间隔 */
+   column-gap:100px;
+}
+
+/* 第一个设置可见 */
+#hot-place>.place>.detail:nth-child(1){
+   display: flex;
+}
+
+#hot-place>.place>.detail>div{
+   /* 500 * 2 + 100 = 1100 使每行刚好两个容器 */
+   margin-top: 30px;
+   width:500px;
+   display: flex;
+   border-bottom:1px dotted #dddd;
+}
+
+#hot-place>.place>.detail>div>div{
+   width:80px;
+   height:50px;
+}
+
+#hot-place>.place>.detail>div>ul{
+   width:400px;
+   display: flex;
+   /* 内容超出容器会换行 */
+   flex-wrap: wrap;
+   gap: 10px;
+   font-size: 14px;
+   color: #3c3a3a;
+}
+
+
+
+
+
+
+
+
+/* 当季推荐样式 */
+
+.recommend{
+   display: flex;
+   flex-direction: column;
+   /* 水平居中 */
+   align-items: center;
+   /* 宽度和长度占满整个屏幕 */
+   width:100vw;
+   height:720px;
+   box-shadow:0 0 2px 0 #8a8585;
+}
+
+.recommend>h1{
+   margin-top:30px;
+}
+
+.recommend>.recommend-option{
+   margin-top:30px;
+   display: flex;
+   width:1080px;
+   height:35px;
+}
+
+.recommend>.recommend-option>span{
+   width:90px;
+   height:35px;
+   text-align: center;
+   line-height: 35px;
+}
+
+.recommend>.recommend-option>span:nth-child(12){
+   color: rgb(53,168,214);
+   border-bottom: 2px solid rgb(53,168,214);
+}
+
+.recommend>.recommend-photos{
+   width: 1100px;
+   height:520px;
+}
+
+.recommend>.recommend-photos>.container{
+   margin-top:20px;
+   display: flex;
+   gap:20px;
+}
+
+/* 两个容器里面图片的共同样式 */
+.recommend>.recommend-photos>.container>div{
+   position: relative;
+}
+
+/* 两个容器里面图片里面文字的共同样式 */
+.recommend>.recommend-photos>.container>div>span{
+   position: absolute;
+   left: 30px;
+   top:210px;
+   font-size: 20px;
+   color: white;
+}
+
+.recommend>.recommend-photos>.photos-top{
+   height:250px;
+   width:100%;
+}
+
+.recommend>.recommend-photos>.photos-top>div>img{
+   height:250px;
+   width:353px;
+   object-fit: cover;
+}
+
+.recommend>.recommend-photos>.photos-top{
+   height:250px;
+   width:100%;
+}
+
+.recommend>.recommend-photos>.photos-bottom>div>img{
+   height:250px;
+   width:260px;
+   object-fit: cover;
+}
+
+
+/* 主题精选样式 */
+
+.selected{
+   display: flex;
+   flex-direction: column;
+   /* 水平居中 */
+   align-items: center;
+   /* 宽度和长度占满整个屏幕 */
+   width:100vw;
+   height:850px;
+   box-shadow:0 0 1px 0 #8a8585;
+}
+
+.selected>h1{
+   margin-top:30px;
+}
+
+.selected>.selected-option{
+   margin-top:30px;
+   display: flex;
+   width:500px;
+   height:35px;
+}
+
+.selected>.selected-option>span{
+   width:125px;
+   height:35px;
+   text-align: center;
+   line-height: 35px;
+}
+
+/* 两个容器里面图片的共同样式 */
+.selected>.selected-photos>.container>div{
+   position: relative;
+}
+
+.selected>.selected-photos>.container>div>img{
+   width:260px;
+   height:200px;
+}
+
+/* 两个容器里面图片里面文字的共同样式 */
+.selected>.selected-photos>.container>div>span{
+   position: absolute;
+   left: 30px;
+   top:150px;
+   font-size: 20px;
+   color: white;
+}
+
+.selected>.selected-photos>.container{
+   margin-top:30px;
+   /* 网格布局 */
+   display:none;
+   width:1100px;
+   /* 设置行内四张图片 每个图片宽度自适应保持一致 */
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   /* 设置行与行之间的间隙 */
+   row-gap:15px;
+}
+
+/* 设置第一个图片容器为可见 */
+.selected>.selected-photos>.container:nth-child(1){
+   display: grid;
+}
+
+
+
+
+
+
+/* 热门目的地样式 */
+
+.destination{
+   display: flex;
+   flex-direction: column;
+   /* 水平居中 */
+   align-items: center;
+   /* 宽度和长度占满整个屏幕 */
+   width:100vw;
+   min-height:2200px;
+}
+
+.destination>.title{
+   margin-top:50px;
+   width: 1100px;
+   display: flex;
+   color: #615e5e;
+}
+
+.destination>.title>p{
+   color: rgb(146, 144, 144);
+   margin-top:20px;
+}
+
+.destination>.destination-content{
+   width:1100px;
+   height:600px;
+}
+
+
+/* 每个州的容器 */
+.destination>.destination-content>.item{
+   margin-top:50px;
+   width:1100px;
+   min-height:300px;
+}
+
+/* 每个州的名称 */
+.destination>.destination-content>.item>span{
+   display: block;
+   height:50px;
+   font-size: 20px;
+}
+
+/* 每个州的地区 */
+.destination>.destination-content>.item>.item-content{
+   /* 列的数量为3，间距为30px */
+   column-count: 3;
+   column-gap: 30px;
+}
+
+/* 每个字母列表的容器 */
+.destination>.destination-content>.item>.item-content>div{
+   display: flex;
+   width:330px;
+}
+
+/* 字母 */
+.destination>.destination-content>.item>.item-content>div>div{
+   width:30px;
+   height:30px;
+   font-family: '仿宋';
+   font-size: 20px;
+}
+
+/* 地区 */
+.destination>.destination-content>.item>.item-content>div>ul>li{
+   color: #3c3a3a;
+   font-size: 15px;
+   width:300px;
+   height:30px;
+}
+
+.destination>.destination-content>.item>.item-content>div>ul>li:hover{
+   /* 鼠标移入有下划线 */
+   text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+   margin-top: 100px;
+   width:100vw;
+   height:350px;
+   background-color: #2c2929;
+   text-align: center;
+}
+.footer>.footer-top{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 0 auto;
+   width:80vw;
+   height:250px;
+}
+
+.footer>.footer-top>div{
+   width:200px;
+   height:150px;
+   text-align: center;
+}
+
+.footer>.footer-top>div>span{
+   font-size: 15px;
+   color: white;
+}
+
+.footer>.footer-top>div>p{
+   margin-top:10px;
+   font-size: 15px;
+   color:rgba(157, 155, 155, 0.867);
+}
+
+.footer>.footer-top>div>p:hover{
+   color:rgb(53,168,214);
+}

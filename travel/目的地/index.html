@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>旅游目的地</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- 导航栏   -->
+   <div class="nav">
+      <!-- 左 -->
+      <div class="nav-left">
+         <span>旅游</span>
+      </div>
+      <!-- 中 -->
+      <div class="nav-middle">
+         <span><a href="../首页/index.html" style="color: black;">首页</a></span>
+         <span style="background-color:rgb(53,168,214);
+         color:white;
+         height:60px;line-height: 60px;">终点</span>
+         <span>旅游指导</span>
+         <span>旅行</span>
+         <span>订票</span>
+         <span>住房酒店</span>
+         <span>社区</span>
+      </div>
+      <!-- 右 -->
+      <div class="nav-right">
+         <input type="text" placeholder="搜索">
+         <span style="color: rgb(53,168,214)">登录 | 注册</span>
+      </div>
+   </div>
+
+
+   <!-- 大图片封面 三部分-->
+   <div class="cover">
+      <img src="images/cover/slide-01.jpg" alt="">
+
+      <!-- 图片上面的搜索框和文字 同一个div下，左右排列-->
+      <div class="cover-title">
+         <!-- 左 -->
+         <div class="cover-input">
+            <h1>Don't fear the unknown</h1>
+            <input type="text" placeholder="我想前往..." style="text-indent:0.5cm;">
+            <div>
+               <span>广州</span>
+               <span>深圳</span>
+               <span>苏州</span>
+               <span>杭州</span>
+               <span>上海</span>
+            </div>
+         </div>
+         <!-- 右 -->
+         <div class="cover-content">
+            <h1>浪漫山水胜地———旅游必不可少的地方</h1>
+            <p>这个美丽的地方是大部分社交平台以及评价平台上认为是绝妙的地方，常年位于旅游热搜榜前十名，获得过许多奖项。去的人，容易被它的浪漫风情和高性价比吸引，给出许多好评。</p>
+            <a href="#">阅读更多</a>
+         </div>
+      </div>
+
+      <!-- 底部 -->
+      <div class="cover-bottom">
+         <div></div>
+         <!-- 向下箭头 -->
+         <a href="#hot-place" style="margin-top:80px;"><img src="images/cover-bottom/bottom.png" alt=""></a>
+         <div>
+            <div>!</div>
+            <span>分享</span>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- 分三部分 标题，地区，详情 -->
+   <div id="hot-place">
+      <h1>热门目的地</h1>
+      <div class="hot-option">
+         <span class="active">国内</span>
+         <span>港澳台</span>
+         <span>日本</span>
+         <span>东南亚</span>
+         <span>南亚 西亚</span>
+         <span>欧洲 美洲</span>
+         <span>澳洲 非洲</span>
+      </div>
+
+      <!-- 地区分为两个div 和后面全球目的地代码结构，js基本一致，后者在排版上使用瀑布流 -->
+      <div class="place">
+         <div class="detail A">
+            <!-- <div>
+               <div>日本</div>
+               <ul>
+                  <li>东京</li>
+                  <li>东京</li>
+                  <li>东京</li>
+                  <li>东京</li>
+                  <li>东京</li>
+               </ul>
+            </div> -->
+         </div>
+         <div class="detail B">
+            
+         </div>
+         <div class="detail C">
+
+         </div>
+         <div class="detail D">
+
+         </div>
+         <div class="detail E">
+
+         </div>
+         <div class="detail F">
+
+         </div>
+         <div class="detail G">
+
+         </div>
+      </div>
+   </div>
+
+
+   <!-- 当季推荐 -->
+   <div class="recommend">
+      <h1>季节推荐</h1>
+      <div class="recommend-option">
+         <span>1月</span>
+         <span>2月</span>
+         <span>3月</span>
+         <span>4月</span>
+         <span>5月</span>
+         <span>6月</span>
+         <span>7月</span>
+         <span>8月</span>
+         <span>9月</span>
+         <span>10月</span>
+         <span>11月</span>
+         <span>12月</span>
+      </div>
+      <!-- 上下结构 两个容器-->
+      <div class="recommend-photos">
+         <div class="photos-top container">
+            <div>
+               <img src="images/recommend/深圳.jpeg" alt="">
+               <span>深圳</span>
+            </div>
+            <div>
+               <img src="images/recommend/哈尔滨.jpeg" alt="">
+               <span>哈尔滨</span>
+            </div>
+            <div>
+               <img src="images/recommend/苏梅岛.jpeg" alt="">
+               <span>苏梅岛</span>
+            </div>
+         </div>
+         <div class="photos-bottom container">
+            <div>
+               <img src="images/recommend/迪拜.jpeg" alt="">
+               <span>迪拜</span>
+            </div>
+            <div>
+               <img src="images/recommend/博鳌.jpeg" alt="">
+               <span>博鳌</span>
+            </div>
+            <div>
+               <img src="images/recommend/悉尼.jpeg" alt="">
+               <span>悉尼</span>
+            </div>
+            <div>
+               <img src="images/recommend/更多.jpeg" alt="">
+               <span>更多 ></span>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- 主题精选 -->
+   <div class="selected">
+      <h1>主题精选</h1>
+      <div class="selected-option">
+         <span class="active">全年适宜</span>
+         <span>季节</span>
+         <span>出行方式</span>
+         <span>节假日</span>
+      </div>
+      <div class="selected-photos">
+         <div class="container">
+            <div>
+               <img src="images/selected/全年适宜/人文历史.jpeg" alt="">
+               <span>人文历史</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/免签.jpeg" alt="">
+               <span>免签</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/动物.jpeg" alt="">
+               <span>动物</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/古镇.jpeg" alt="">
+               <span>古镇</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/小众.jpeg" alt="">
+               <span>小众</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/拍片圣地.jpeg" alt="">
+               <span>拍片圣地</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/潜水.jpeg" alt="">
+               <span>潜水</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/登山.jpeg" alt="">
+               <span>登山</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/美食.jpeg" alt="">
+               <span>美食</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/自然风景.jpeg" alt="">
+               <span>自然风景</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/购物.jpeg" alt="">
+               <span>购物</span>
+            </div>
+            <div>
+               <img src="images/selected/全年适宜/逃离雾霾.jpeg" alt="">
+               <span>逃离雾霾</span>
+            </div>
+         </div>
+         <div class="container">
+            <div>
+               <img src="images/selected/季节/当地节庆.jpeg" alt="">
+               <span>当地节庆</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/星空.jpeg" alt="">
+               <span>星空</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/极光.png" alt="">
+               <span>极光</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/极限运动.jpeg" alt="">
+               <span>极限运动</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/海岛.jpeg" alt="">
+               <span>海岛</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/温泉.jpeg" alt="">
+               <span>温泉</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/温暖地点.jpeg" alt="">
+               <span>温暖地点</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/滑雪.jpeg" alt="">
+               <span>滑雪</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/草原.jpeg" alt="">
+               <span>草原</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/赏花.jpeg" alt="">
+               <span>赏花</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/避暑.jpeg" alt="">
+               <span>避暑</span>
+            </div>
+            <div>
+               <img src="images/selected/季节/雪景.jpeg" alt="">
+               <span>雪景</span>
+            </div>
+         </div>
+         <div class="container">
+            <div>
+               <img src="images/selected/出行方式/一个人.jpeg" alt="">
+               <span>一个人</span>
+            </div>
+            <div>
+               <img src="images/selected/出行方式/亲子游.jpeg" alt="">
+               <span>亲子游</span>
+            </div>
+            <div>
+               <img src="images/selected/出行方式/好朋友.jpeg" alt="">
+               <span>好朋友</span>
+            </div>
+            <div>
+               <img src="images/selected/出行方式/带父母.jpeg" alt="">
+               <span>带父母</span>
+            </div>
+            <div>
+               <img src="images/selected/出行方式/徒步.jpeg" alt="">
+               <span>徒步</span>
+            </div>
+            <div>
+               <img src="images/selected/出行方式/游轮.jpeg" alt="">
+               <span>游轮</span>
+            </div>
+            <div>
+               <img src="images/selected/出行方式/自驾.jpeg" alt="">
+               <span>自驾</span>
+            </div>
+            <div>
+               <img src="images/selected/出行方式/蜜月.jpeg" alt="">
+               <span>蜜月</span>
+            </div>
+            <div>
+               <img src="images/selected/出行方式/骑行.jpeg" alt="">
+               <span>骑行</span>
+            </div>
+         </div>
+         <div class="container">
+            <div>
+               <img src="images/selected/节假日/中秋.jpeg" alt="">
+               <span>中秋</span>
+            </div>
+            <div>
+               <img src="images/selected/节假日/五一.jpeg" alt="">
+               <span>五一</span>
+            </div>
+            <div>
+               <img src="images/selected/节假日/元旦.jpeg" alt="">
+               <span>元旦</span>
+            </div>
+            <div>
+               <img src="images/selected/节假日/国庆.jpeg" alt="">
+               <span>国庆</span>
+            </div>
+            <div>
+               <img src="images/selected/节假日/寒假.jpeg" alt="">
+               <span>寒假</span>
+            </div>
+            <div>
+               <img src="images/selected/节假日/暑假.jpeg" alt="">
+               <span>暑假</span>
+            </div>
+            <div>
+               <img src="images/selected/节假日/春节.jpeg" alt="">
+               <span>春节</span>
+            </div>
+            <div>
+               <img src="images/selected/节假日/清明.jpeg" alt="">
+               <span>清明</span>
+            </div>
+            <div>
+               <img src="images/selected/节假日/端午.jpeg" alt="">
+               <span>端午</span>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- 全球目的地 -->
+   <div class="destination">
+      <div class="title">
+         <h1>全球目的地</h1>
+         <p>（按拼音首字母排序）</p>
+      </div>
+      <!--  -->
+      <div class="destination-content">
+         <!--   每个州为一个部分（容器）--> 
+         <!-- 亚洲 -->
+         <div class="Asia item">
+            <span>亚洲</span>
+            <div class="item-content">
+               <!-- 瀑布流排版方式 -->
+               <!-- <div>
+                  <div></div>
+                  <ul></ul>
+               </div> -->
+            </div>
+         </div>
+
+         
+         <!--北美洲  -->
+         <div class="NorthAmerica item">
+            <span>北美洲</span>
+            <div class="item-content">
+               <!-- <div>
+                  <div></div>
+                  <ul></ul>
+               </div> -->
+            </div>
+         </div>
+
+
+         <!-- 南美洲 -->
+         <div class="SouthAmerica item">
+            <span>南美洲</span>
+            <div class="item-content">
+               <!-- <div>
+                  <div></div>
+                  <ul></ul>
+               </div> -->
+            </div>
+         </div>
+
+
+         <!-- 欧洲 -->
+         <div class="Europe item">
+            <span>欧洲</span>
+            <div class="item-content">
+               <!-- <div>
+                  <div></div>
+                  <ul></ul>
+               </div> -->
+            </div>
+         </div>
+
+
+         <!-- 非洲 -->
+         <div class="Africa item">
+            <span>非洲</span>
+            <div class="item-content">
+               <!-- <div>
+                  <div></div>
+                  <ul></ul>
+               </div> -->
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- 底部 -->
+   <div class="footer">
+      <div class="footer-top">
+         <div class="footer-left">
+            <span>旅游网站</span>
+            <p>最受欢迎的旅游网站</p>
+            <p>用户分布在全球各地</p>
+            <p>拥有最新最全的旅游快报</p>
+            <p>超10000多个旅游目的地</p>
+            <p>35000000多次下单量</p>
+            <p>超亿万数量的好评</p>
+         </div>
+         <div class="footer-middle">
+            <span>关于我们</span>
+            <p>隐私政策</p>
+            <p>开放平台</p>
+            <p>保密协议</p>
+            <p>投诉政策</p>
+            <p>联系我们</p>
+         </div>
+         <div class="footer-right">
+            <span>我们的服务</span>
+            <p>推荐服务</p> 
+            <p>最新动态</p>
+            <p>广告推送</p>
+            <p>服务指南</p>
+            <p>专业客服</p>
+         </div>
+      </div>
+      <span style="color: white;">注意：以上所有内容均为自定义编写，仅供学习交流使用</span>
+   </div>
+</body>
+<script src="js/input.js"></script>
+
+<script src="js/hot/selected.js"></script>
+<script src="js/hot/A.js"></script>
+<script src="js/hot/B.js"></script>
+<script src="js/hot/C.js"></script>
+<script src="js/hot/D.js"></script>
+<script src="js/hot/E.js"></script>
+<script src="js/hot/F.js"></script>
+<script src="js/hot/G.js"></script>
+
+<script src="js/selected.js"></script>
+
+<script src="js/world/Asialist.js"></script>
+<script src="js/world/NorthAmericaList.js"></script>
+<script src="js/world/SouthAmericaList.js"></script>
+<script src="js/world/EuropeList.js"></script>
+<script src="js/world/AfricaList.js"></script>
+</html>

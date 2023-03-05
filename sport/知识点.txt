@@ -1,0 +1,71 @@
+HTML结构：
+
+每个部分的作用可以看看类选择器，例如：<div class = "new"> 的 new 即是代表该部分为 新闻的意思
+
+
+
+
+
+CSS结构：
+
+设置盒子阴影  ：box-shadow: 0 0 3px 0 rgba(93, 89, 89, 0.867);
+
+
+设置过渡（变化）时间 :  transition: 数字s;
+
+
+设置边框：border:1px solid #dddd;
+
+
+:hover  鼠标移入的样式
+
+
+让图片满尺寸完美显示（img标签使用）  object-fit: cover; 
+
+
+span、li、p...默认是行内元素，由内容撑开，无法设置高度，想设置高度必须设置display:block（盒式元素）
+
+
+width:100vw; vw是屏幕宽度百分占比
+height:100vh;vw是屏幕高度百分占比
+
+
+垂直居中：line-height
+水平居中：text-align:center
+
+
+
+左右排列的元素基本是使用 FlexBox 布局即：
+
+display:flex 默认横向排列
+
+/* 设置横向排列方式 */
+ justify-content: space-around;
+
+ justify-content: center;  水平居中
+
+ algin-item:center;	水平居中
+
+ 属性gap,设置元素间隔
+
+
+
+
+
+
+
+JS轮播逻辑：
+
+左右滑动：
+两个容器，几张图片
+	最外层容器是一张图片大小的长度（设置overflow:hidden，超出部分不可见）
+		里面的容器是几张图片（横向排列）加起来的长度
+
+			几张图片横向排列
+
+可通过修改里面容器的tranform：translateX（--px）来一定里面的容器达到切换图片效果
+
+渐变切换：
+	一个容器，几张图片（设置position；relative）
+		四张图片重叠在一起（设置position；absolute;）
+可通过修改每张图片的opacity:1;(透明度)来切换显示图片

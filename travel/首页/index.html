@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>旅游首页</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- 导航栏   -->
+   <div class="nav">
+      <!-- 左 -->
+      <div class="nav-left">
+         <span>旅游</span>
+      </div>
+      <!-- 中 -->
+      <div class="nav-middle">
+         <span style="background-color:rgb(53,168,214);
+                     color:white;
+                     height:60px;line-height: 60px;">首页</span>
+         <span><a href="../目的地/index.html" style="color: black;">终点</a></span>
+         <span>旅游指导</span>
+         <span>旅行</span>
+         <span>订票</span>
+         <span>住房酒店</span>
+         <span>社区</span>
+      </div>
+      <!-- 右 -->
+      <div class="nav-right">
+         <span style="color: rgb(53,168,214)">登录 | 注册</span>
+      </div>
+   </div>
+
+   <!-- 大轮播图 -->
+   <div class="slide">
+      <!-- 长度一个图片 -->
+      <ul class="item">
+         <!-- 每张图片的容器 -->
+         <li>
+            <img src="./images/big-slide/slide-01.jpg" alt="">
+            <div class="card">
+               <h1>2022.10.06</h1>
+               <span>山水游玩记——感受山水气息</span>
+            </div>
+         </li>
+         <li>
+            <img src="./images/big-slide/slide-02.jpg" alt="">
+            <div class="card">
+               <h1>2022.11.12</h1>
+               <span>宁静/幽静的仙境,净化内心</span>
+            </div>
+         </li>
+         <li>
+            <img src="./images/big-slide/slide-03.jpg" alt="">
+            <div class="card">
+               <h1>2022.11.18</h1>
+               <span>湖畔——悠然自得的美妙享受</span>
+            </div>
+         </li>
+         <li>
+            <img src="./images/big-slide/slide-04.jpg" alt="">
+            <div class="card">
+               <h1>2022.12.06</h1>
+               <span>感受来自冬日的馈赠——雪地飞行</span>
+            </div>
+         </li>
+      </ul>
+      <!-- 上下结构 -->
+      <div class="form">
+         <!-- 上 -->
+         <div class="input">
+            <label><input type="radio" name="option" checked> 全部</label>
+            <label><input type="radio" name="option"> 买票</label>
+            <label><input type="radio" name="option"> 目的地</label>
+            <label><input type="radio" name="option"> 景点</label>
+         </div>
+         <!-- 下 -->
+         <div class="search">
+            <div style="display:initial;">
+               <input type="search" placeholder="万里长城">
+            </div>
+            <div>
+               <input type="search" placeholder="请输入你的订票日期范围" style="width:200px;border-radius: 8px 0 0 8px;">
+               <input type="date">至<input type="date">
+            </div>
+            <div>
+               <input type="search" placeholder="请输入你的目的地">
+            </div>
+            <div>
+               <input type="search" placeholder="请输入你想去的地方">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- 轮播图下面的卡片 -->
+   <div class="navCards">
+      <div>
+         <h1>本地游</h1>
+         <span>熟悉的风景和乐趣</span>
+      </div>
+      <div>
+         <h1>车票</h1>
+         <span>超多优惠</span>
+      </div>
+      <div>
+         <h1>机票</h1>
+         <span>平民价格,无负担</span>
+      </div>
+      <div>
+         <h1>住房</h1>
+         <span>超多酒店任你选</span>
+      </div>
+      <div>
+         <h1>随心行</h1>
+         <span>自己制定计划游玩</span>
+      </div>
+      <div>
+         <h1>海上邮轮</h1>
+         <span>感受大海的气息</span>
+      </div>
+   </div>
+
+   <!-- 主页面（左右排列） -->
+   <div class="mainPage">
+      <!-- 主页面左 -->
+      <div class="mainPage-left">
+         <!-- 第一个 -->
+         <div class = "card">
+            <div>
+               <h1>风景美食专栏</h1>
+               <p>首页</p>
+            </div>
+            <!-- 小轮播图容器四个图片长度 左右排列-->
+            <ul class="slide">
+               <li>
+                  <img src="./images/small-slide/slide-03.jpg" alt="">
+                  <span>美味的秘密</span>
+                  <p>如果你对美食有独特的追求或者是有一份坚定的执着，我建议你来到这里...</p>
+               </li>
+               <li>
+                  <img src="./images/small-slide/slide-01.jpg" alt="">
+                  <span>幽静的森林</span>
+                  <p>相信这里的一切会让你焦躁的内心得到平静、洗涤，感受来自大自然的气息...</p>
+               </li>
+               <li>
+                  <img src="./images/small-slide/slide-02.jpg" alt="">
+                  <span>美食</span>
+                  <p>不负“食在广州”的美称，欢迎各位游客来到这座城市，感受当地的水土风情，享受当地的美食...</p>
+               </li>
+            </ul>
+         </div>
+         <!-- 第二个 -->
+         <div class = "card">
+            <div>
+               <h1>目的地推荐</h1>
+               <p>更多</p>
+            </div>
+            <img src="./images/card/card-06.jpg" alt="">
+            <p style="font-size:16px;">全方位的攻略图，带你玩转全国...</p>
+         </div>
+         <!-- 第三个 -->
+         <div class = "card">
+            <div>
+               <h1>网站最新动态</h1>
+            </div>
+            <p>11月11日 双十一来临，旅游出行优惠大放送</p>
+            <p>10月01日 国庆节快乐，节假日旅游更方便</p>
+            <p>09月16日 出门旅游，必须做好防疫工作</p>
+            <p>09月01日 开学大优惠，等你来抢购</p>
+            <p>12月01日 网站模块升级，使用更便捷</p>
+         </div>
+      </div>
+      <!-- 主页面右 -->
+      <div class="mainPage-right">
+         <div class="head">
+            <div>
+               <span style="border-bottom:3px solid rgb(0, 119, 255);
+                           width:150px;
+                           text-align:center;
+                           height:60px;line-height:60px;
+                           color:rgb(53,168,214)">热门推荐</span>
+               <span>最新</span>
+            </div>
+            <div class="post">写帖子</div>
+         </div>
+         <div class="main">
+            <div class="content">
+               <img src="./images/card/card-01.jpg" alt="">
+               <div>
+                  <h1>惬意生活--山中游行记</h1>
+                  <p>游行在两峡之间，清新的空气以及清晰可见底的湖水，让我的心理得到了洗涤，这可遇不可得的机会，让我流连忘返，让我想起了古人所做的一首诗...</p>
+                  <div class="bottom">
+                     <p>荷兰，by <i>会飞的气球 </i> 浏览(2306)</p>
+                     <p>785（赞）</p>
+                  </div>
+               </div>
+            </div>
+            <div class="content">
+               <img src="./images/card/card-02.jpg" alt="">
+               <div>
+                  <h1>感受起飞的感觉--雪中飞行记</h1>
+                  <p>冬天来临了，又到了观赏白茫茫的雪花和玩雪仗的时候，来到这里满足自己的想法，在白茫茫的雪地上飞行，伴随着寒风，让我感受到冬天的气息...</p>
+                  <div class="bottom">
+                     <p>俄罗斯，by <i>美好生活 </i> 浏览(7406)</p>
+                     <p>2785（赞）</p>
+                  </div>
+               </div>
+            </div>
+            <div class="content">
+               <img src="./images/card/card-04.jpg" alt="">
+               <div>
+                  <h1>直面自己的恐惧，勇往直前。</h1>
+                  <p>攀登是锻炼自己耐力的最好方式之一，这个过程可能会比较痛苦，但是坚持到底的话你一定会收获许多，改变你对生活的看法，提升自己的能力...</p>
+                  <div class="bottom">
+                     <p>大山，by <i>梦想 </i> 浏览(1306)</p>
+                     <p>685（赞）</p>
+                  </div>
+               </div>
+            </div>
+            <div class="content">
+               <img src="./images/card/card-03.jpg" alt="">
+               <div>
+                  <h1>你喜欢冬天吗？我却很是喜欢</h1>
+                  <p>它们喜欢在被窝里度过一个冬天，而我却不是，我喜欢冬天，喜欢冬天的大学，滑雪让我在冬天里充满活力，不畏寒冷，积极向上，突破自己的极限...</p>
+                  <div class="bottom">
+                     <p>北极圈，by <i>花开花落 </i> 浏览(5306)</p>
+                     <p>3985（赞）</p>
+                  </div>
+               </div>
+            </div>
+            <div class="content">
+               <img src="./images/card/card-05.jpg" alt="">
+               <div>
+                  <h1>跟我一起,征服大自然</h1>
+                  <p>从小倔强的我,就不会屈服于各种困难,无论在生活还是心理上面,我一直都是很强大的,因此我很喜欢去主动战胜困难,爬山也是,当我爬上最高的山峰时...</p>
+                  <div class="bottom">
+                     <p>高山，by <i>理想生活 </i> 浏览(7306)</p>
+                     <p>5956（赞）</p>
+                  </div>
+               </div>
+            </div>
+            <div class="content">
+               <img src="./images/big-slide/slide-03.jpg" alt="">
+               <div>
+                  <h1>湖畔——悠然自得的美妙享受</h1>
+                  <p>亲近自然，亲近湖泊，感受自然的美妙，闲暇时刻可以钓钓鱼、划划船之类...</p>
+                  <div class="bottom">
+                     <p>湖畔，by <i>爱吃饭的小怪兽 </i> 浏览(23106)</p>
+                     <p>5865（赞）</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="bottomList">
+            <span>共5页 / 60条</span>
+            <div class="card"> 
+               <div>1</div>
+               <div>2</div>
+               <div>3</div>
+               <div>4</div>
+               <div>5</div>
+            </div>
+            <span style="color:rgb(53,168,214)">下一页</span>
+         </div>
+      </div>
+   </div>
+   <div class="footer">
+      <div class="footer-top">
+         <div class="footer-left">
+            <span>旅游网站</span>
+            <p>最受欢迎的旅游网站</p>
+            <p>用户分布在全球各地</p>
+            <p>拥有最新最全的旅游快报</p>
+            <p>超10000多个旅游目的地</p>
+            <p>35000000多次下单量</p>
+            <p>超亿万数量的好评</p>
+         </div>
+         <div class="footer-middle">
+            <span>关于我们</span>
+            <p>隐私政策</p>
+            <p>开放平台</p>
+            <p>保密协议</p>
+            <p>投诉政策</p>
+            <p>联系我们</p>
+         </div>
+         <div class="footer-right">
+            <span>我们的服务</span>
+            <p>推荐服务</p> 
+            <p>最新动态</p>
+            <p>广告推送</p>
+            <p>服务指南</p>
+            <p>专业客服</p>
+         </div>
+      </div>
+      <span style="color: white;">注意：以上所有内容均为自定义编写，仅供学习交流使用</span>
+   </div>
+</body>
+<script src="script.js"></script>
+</html>

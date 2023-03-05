@@ -1,0 +1,336 @@
+*{
+   margin:0;
+   padding:0;
+   list-style-type: none;
+}
+body{
+   overflow-x: hidden;
+}
+
+/* 导航栏 header*/
+header{
+   width:100vw;
+   height:235px;
+}
+
+/* 导航栏上 */
+header>.top{
+   height:120px;
+   width:100vw;
+   display: flex;
+   justify-content: space-between;
+}
+
+header>.top>div{
+   display: flex;
+   text-align: center;
+   height:120px;
+   width:400px;
+   line-height: 120px;
+}
+
+header>.top>div>h1{
+   font-size:50px;
+   color: rgb(221, 150, 57);
+   margin-left:100px;
+}
+
+header>.top>div>p{
+   margin:18px 0 0 20px;
+}
+
+/* 导航栏中间 */
+header>.middle{
+   width:100vw;  
+   height:50px;
+   background-color: rgba(11, 10, 10, 0.897); 
+}
+header>.middle>div{
+   width:60vw;
+   height:50px;
+   display: flex;
+   margin-left:50px;
+}
+header>.middle>div>span{
+   height:50px;
+   line-height: 50px;
+   width:100px;
+   text-align: center;
+   color: white;
+}
+
+/* 导航栏下面 */
+header>.bottom{
+   background-color: red;
+   width:100vw;  
+   height:40px;  
+}
+header>.bottom>.bottom_card{
+   margin-left:100px;
+   display: flex;
+   width:60vw;
+   height:40px;
+}
+header>.bottom>.bottom_card>span{
+   display: block;
+   height:40px;
+   line-height: 40px;
+   width:100px;
+   margin-left: 40px;
+   color: white;
+}
+
+/* 多个卡片的导航列表 */
+.nav{
+   width:100vw;
+   height:150px;
+   display: flex;
+   justify-content: space-evenly;
+}
+/* 按钮 */
+.nav>.turn{
+   padding: 30px 0px;
+   font-size:20px;
+   text-align: center;
+   color: rgb(0, 115, 255);
+   width: 20px;
+   height: 40px;
+   z-index: 0;
+   border:1px solid rgb(4, 134, 233);
+}
+.nav>.turn:hover{
+   background:#408ed6;
+   color:white;
+}
+.over{
+   display: flex;
+   width:70vw;
+   height: 100px;
+   gap:20px;
+}
+.over>.playback{
+   display: flex;
+   width:150px;
+   height: 100px;
+   border:1px solid #dddd;
+   color: rgb(179, 184, 189);
+}
+.over>.playback>div{
+   width:50%;
+   height:100px;
+}
+.over>.playback>.play_left>p{
+   font-size: 10px;
+   display: block;
+   height:33px;
+   line-height: 33px;
+   text-align: center;
+}
+.over>.playback>.play_right>p{
+   font-size: 10px;
+   display: block;
+   height:33px;
+   line-height: 33px;
+   text-align: center;
+}
+
+/* 主页面 */
+main{
+   display: flex;
+   width:100vw;
+   min-height:250vh;
+   justify-content: space-evenly;
+}
+/* 左 */
+main>.main-left{
+   width:60vw;
+   min-height:250vh;
+}
+/* 轮播 */
+main>.main-left>.lunbo-photo{
+   display: flex;
+   width:800px;
+   height: 350px;
+   align-items: center;
+   overflow: hidden;
+   position: relative;
+}
+
+main>.main-left>.lunbo-photo>.move_card>.move{
+   width: 3200px;
+   height: 350px;
+   transition: 0.5s;
+}
+main>.main-left>.lunbo-photo>.move_card>.move>li{
+   float: left;
+   width: 800px;
+   height: 350px;
+   position: relative;
+}
+main>.main-left>.lunbo-photo>.move_card>.move>li>a>span{
+   color: white;
+   background-color: #1f2327c6;
+   font-size: 18px;
+   position: absolute;
+   bottom: 25px;
+   left: 30px;
+}
+main>.main-left>.lunbo-photo>.move_card>.move>li>a>img{
+   width:800px;
+   height: 350px;
+   object-fit: cover;
+   transition: 0.5s;
+}
+main>.main-left>.lunbo-photo>.move_card>.move>li>a>img:hover{
+   transform: scale(1.2);
+}
+main>.main-left>.lunbo-photo>button{
+   position: absolute;
+   color: white;
+   background: rgba(0,0,0,0.6);
+   font-size: 40px;
+   left: 0px;
+   z-index: 2;
+   height:80px;
+   width:80px;
+   border:0;
+}
+main>.main-left>.lunbo-photo>#right_turn{
+   left:720px;
+} 
+
+main>.main-left>.lunbo-photo>button:hover{
+   background: rgba(170, 165, 165, 0.8);
+}
+main>.main-left>.nav-title{
+   margin-top: 30px;
+   width: 100%;
+   display: flex;
+   height:50px;
+}
+main>.main-left>.nav-title>span{
+   height:50px;
+   line-height: 50px;
+   width:20%;
+   text-align: center;
+   border: 2px solid #dddd;
+}
+main>.main-left>.new-content{
+   min-height: 100vh;
+   width:100%;
+}
+main>.main-left>.new-content>.new{
+   width:100%;
+   margin-top: 30px;
+   height:200px;
+   display: flex;
+   justify-content:space-evenly;
+   align-items: center;
+   border-bottom: 1px solid #dddd;
+}
+main>.main-left>.new-content>.new>img{
+   width:200px;
+   height:150px;
+   object-fit: cover;
+}
+main>.main-left>.new-content>.new>.content{
+   width:65%;
+   height:200px;
+   display: flex;
+   flex-direction: column;
+   justify-content:space-around;
+}
+main>.main-left>.new-content>.new>.content>h1{
+   font-size:22px;
+}
+main>.main-left>.new-content>.new>.content>p{
+   color: rgba(154, 147, 147, 0.97);
+}
+/* 右 */
+main>.main-right{
+   min-height:100vh;
+   width:32vw;
+}
+/* 右边的排行榜 上中下部分 */
+main>.main-right>.credit-card{
+   width:30vw;
+   height:350px;
+   border:1px solid #dddd;
+}
+/* 上 */
+main>.main-right>.credit-card>.credit-title{
+   width:100%;
+   padding-left:30px;
+   height:40px;
+   font-size:12px;
+   color: rgba(177, 172, 172, 0.867);
+   border-bottom:1px solid #dddd;
+}
+/* 中 */
+main>.main-right>.credit-card>.credit-name{
+   display: flex;
+   width:100%;
+   height:50px;
+   text-align: center;
+}
+main>.main-right>.credit-card>.credit-name>span{
+   display: block;
+   width:25%;
+   height:50px;
+   line-height: 50px;
+}
+/* 下 */
+main>.main-right>.credit-card>.credit-content{
+   display: flex;
+   background-color: #f2eded;
+   text-align: center;
+}
+main>.main-right>.credit-card>.credit-content>div{
+   width:25%;
+   height:260px;
+}
+main>.main-right>.credit-card>.credit-content>div>p{
+   height:52px;
+   line-height:52px;
+}
+main>.main-right>.video-top{
+   margin-top: 40px;
+   display: flex;
+   justify-content: space-between;
+   width:100%;
+   padding:0 20px;
+   height:50px;
+   line-height: 50px;
+}
+main>.main-right>.video-top>h1{
+   font-size: 18px;
+}
+main>.main-right>.video-top>p{
+   font-size: 13px;
+}
+footer{
+   width:100vw;
+   min-height:150px;
+   background-color: #327FC6;
+   padding:50px 0;
+}
+footer>.footer{
+   margin:0 auto;
+   width:40vw;
+   height:130px;
+   display:flex;
+}
+.footer>a{
+   font-size: 15px;
+   color:#dddd;
+}
+
+.footer>a:hover{
+   color:white;
+}
+
+footer>span{
+   display: block;
+   text-align: center;
+   color: #dddd;
+}

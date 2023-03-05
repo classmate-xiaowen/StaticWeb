@@ -1,0 +1,404 @@
+*{
+   margin:0;
+   padding:0;
+   list-style-type: none;
+}
+a{
+   text-decoration: none;
+}
+body{
+   width:100vw;
+   min-height:200vh;
+   overflow-x: hidden;
+}
+/* 头部导航栏 左右结构 */
+header{
+   height:100px; 
+   width:100vw;
+   display: flex;
+   justify-content: space-around;
+   align-items: center; 
+   border-bottom: 1px solid #dddd;
+   box-shadow:0 0 1px 0 rgb(82, 80, 80);
+}
+header>ul{
+   display: flex;
+}
+header>.headleft{
+   width:40vw;
+   height: 100px;
+   line-height: 100px;
+   margin-left:-100px;
+}
+header>.headleft{
+   width:30vw;
+   height: 100px;
+   line-height: 100px;
+}
+header>.headleft>li{
+   margin:10px 0 0 20px;
+}
+header>.headright{
+   width:10vw;
+   height: 100px;
+   line-height: 100px; 
+}
+header>.headright>.login{
+   width:50px;
+   height:50px;
+   border-radius: 50%;
+   background-color:#dddd;
+   line-height: 50px;
+   text-align: center;
+   margin: 25px 0 0 10px;
+   color: rgb(255, 255, 255);
+}
+
+/* 主页面 左中右结构 */
+main{
+   margin-top:50px;
+   width:100vw;
+   min-height:200vh;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+/* 左边 */
+main>.main-left{
+   width:10vw;
+   height:61.5vh;
+   border: 1px solid #dddd;
+   position: sticky;
+   top:20px;
+}
+main>.main-left>ul>li{
+   height:6vh;
+   width: 100%;
+   text-align: center;
+   line-height: 6vh;
+   border-bottom: 1px solid #dddd;
+}
+main>.main-left>ul>li:hover{
+   background-color: rgb(0, 136, 255);
+   color: white;
+}
+
+/* 中间 */
+main>.main-middle{
+   width:60vw;
+   min-height: 200vh;
+}
+
+/* 中间头部 */
+main>.main-middle>.head{
+   display: flex;
+   width:100%;
+   height:300px;
+}
+main>.main-middle>.head>div{
+   width:50%;
+   height: 100%;
+}
+
+/* 轮播图 */
+main>.main-middle>.head>.lunbo-photo{
+   display: flex;
+   width:30vw;
+   height:300px;
+   align-items: center;
+   overflow: hidden;
+   position: relative;
+}
+main>.main-middle>.head>.lunbo-photo:hover button{
+   display: block;
+}
+main>.main-middle>.head>.lunbo-photo>.move_card>.move{
+   width:30vw;
+   height:300px;
+   transition: 0.5s;
+   position: relative;
+}
+main>.main-middle>.head>.lunbo-photo>.move_card>.move>li{
+   width: 30vw;
+   height:300px;
+   position:absolute;
+   left:0;
+   top:0;
+   opacity:0;
+   transition: 1s;
+}
+main>.main-middle>.head>.lunbo-photo>.move_card>.move>li>a>span{
+   color: white;
+   font-size: 18px;
+   position: absolute;
+   bottom: 25px;
+   left: 80px;
+}
+main>.main-middle>.head>.lunbo-photo>.move_card>.move>li>a>img{
+   width:30vw;
+   height:300px;
+   object-fit: cover;
+}
+main>.main-middle>.head>.lunbo-photo>button{
+   position: absolute;
+   color: white;
+   background: rgba(0,0,0,0.6);
+   font-size: 40px;
+   left: 0px;
+   z-index: 2;
+   height:50px;
+   width:30px;
+   border:0;
+   display: none;
+}
+main>.main-middle>.head>.lunbo-photo>#right_turn{
+   left:380px;
+} 
+
+main>.main-middle>.head>.lunbo-photo>button:hover{
+   background: rgba(170, 165, 167, 0.8);
+}
+
+/* 头部右边文字 */
+main>.main-middle>.head>.main-head-text>div{
+   position: relative;
+   margin-left:20px;
+   width:90%;
+   height:60px;
+   line-height: 60px;
+   border-bottom: 1px solid #dddd;
+}
+main>.main-middle>.head>.main-head-text>div>p{
+   font-size: 10px;
+   position: absolute;
+   top:20px;
+   left:320px;
+   color:rgba(147, 138, 138, 0.926)
+}
+main>.main-middle>.head>.main-head-text>div>span:hover{
+   color: rgb(0, 145, 255);
+}
+
+/* 头部下面标题栏 */
+main>.main-middle>.main-content>.main-title{
+   display: flex;
+   width:100%;
+   height:50px;
+   border-bottom: 1px solid #dddd;
+   margin-top:50px;
+}
+main>.main-middle>.main-content>.main-title>h1{
+   font-size:20px;
+   width:14%;
+   height:50px;
+   text-align: center;
+   line-height: 50px;
+}
+main>.main-middle>.main-content>.main-title>span{
+   display: block;
+   font-size:20px;
+   width:12%;
+   height:50px;
+   text-align: center;
+   line-height: 50px;
+}
+main>.main-middle>.main-content>.main-title>span:hover{
+   background-color: rgb(0, 136, 255);
+   color: white;
+}
+
+/* 新闻栏 */
+main>.main-middle>.main-content>.new{
+   width:100%;
+   margin-top: 30px;
+   height:150px;
+   display: flex;
+   justify-content:space-evenly;
+   align-items: center;
+   border-bottom: 1px solid #dddd;
+}
+main>.main-middle>.main-content>.new>img{
+   width:200px;
+   height:120px;
+   object-fit: cover;
+}
+main>.main-middle>.main-content>.new>.content{
+   width:65%;
+   height:150px;
+   display: flex;
+   flex-direction: column;
+   justify-content:space-around;
+}
+main>.main-middle>.main-content>.new>.content:hover h1{
+   color: rgba(0, 183, 255, 0.797);
+}
+main>.main-middle>.main-content>.new>.content>h1{
+   font-size:22px;
+}
+main>.main-middle>.main-content>.new>.content>p{
+   color: rgba(154, 147, 147, 0.97);
+}
+main>.main-middle>.main-content>.new>.content>.new-detail{
+   display: flex;
+   width:65%;
+   height: 15px;
+   justify-content: space-around;
+}
+
+
+/* 主页面右边 */
+main>.main-right{
+   width:20vw;
+   min-height: 100vh;
+}
+main>.main-right>.main-right-top{
+   border: 1px solid #dddd;
+   width:99%;
+   height:135px;
+   padding:10px 0;
+}
+main>.main-right>.main-right-top>div{
+   display: flex;
+   justify-content: space-between;
+}
+main>.main-right>.main-right-top>div>h1{
+   font-size: 18px;
+   margin-left: 15px;
+}
+main>.main-right>.main-right-top>div>p{
+   font-size: 12px;
+   margin-right: 15px;
+}
+main>.main-right>.main-right-top>.main-right-top-content>.main-right-top-content-card>p:hover{
+   color: rgba(0, 183, 255, 0.797);
+}
+main>.main-right>.main-right-top>.main-right-top-content{
+   margin-top:20px;
+}
+main>.main-right>.main-right-top>.main-right-top-content>.main-right-top-content-card{
+   text-align: center;
+   font-size: 6px;
+   width:33%;
+   height:80px;
+   border-right:1px solid #dddd;
+}
+main>.main-right>.main-right-top>.main-right-top-content>.main-right-top-content-card>div{
+   width:50px;
+   height:50px;
+   border-radius: 50%;
+   background-color: #dddd;
+   margin-left:20px;
+}
+main>.main-right>.main-right-middle-one>div{
+   border-bottom: 2px solid rgb(0, 145, 255);
+}
+main>.main-right>.main-right-middle-one{
+   margin-top:30px;
+   width:100%;
+   height:150px;
+   border-bottom: 0.5px solid #dddd;
+}
+main>.main-right>.main-right-middle>div{
+   font-size: 25px;
+}
+main>.main-right>.main-right-middle-one>p{
+   margin-top: 15px;
+}
+main>.main-right>.main-right-middle-one>p:hover{
+   color: rgba(0, 183, 255, 0.797);
+}
+main>.main-right>.main-right-middle-two{
+   margin-top:50px;
+   width:100%;
+   height:40px;  
+   border-bottom: 2px solid rgb(0, 145, 255); 
+}
+main>.main-right>.main-right-middle-two>.middle-card{
+   display: flex;
+   margin-top:20px;
+   width:100%;
+   height:30px;
+   line-height: 30px;
+   text-align: center;
+   border-bottom: 1px solid #dddd;
+   justify-content: space-between;
+}
+main>.main-right>.main-right-middle-two>.middle-card>span{
+   font-size: 18px;
+}
+main>.main-right>.main-right-middle-two>.middle-card>p{
+   font-size: 10px;
+   margin-top:3px;
+   color: rgba(132, 125, 125, 0.867);
+}
+main>.main-right>.main-right-middle-two>.middle-card>span:hover{
+   color: rgb(0, 136, 255);
+}
+main>.main-right>.main-right-middle-three{
+   margin-top:300px;
+   width:20vw;
+}
+main>.main-right>.main-right-middle-three>.hot-list{
+   display: flex;
+   justify-content: space-between;
+   width:90%;
+   height:30px;
+}
+main>.main-right>.main-right-middle-three>.hot-list>p{
+   font-size:15px;
+   margin-top:10px;
+}
+main>.main-right>.main-right-middle-three>.hot-content>div{
+   display: flex;
+   width: 100%;
+   height:10px;
+   margin-top:50px;
+}
+main>.main-right>.main-right-middle-three>.hot-content>div>span{
+   width:20px;
+   height:20px;
+   line-height: 20px;
+   background-color: rgb(236, 32, 32);
+   color: white;
+   text-align: center;
+   font-size: 15px;
+}
+main>.main-right>.main-right-middle-three>.hot-content>div>p{
+   display: block;
+   font-size: 15px;
+   height:40px;
+   line-height: 20px;
+   width:85%;
+   margin-left:10px;
+}
+main>.main-right>.main-right-middle-three>.hot-content>div>p:hover{
+   color: rgb(0, 136, 255);
+}
+
+/* 底部 */
+footer{
+   width:100vw;
+   min-height:150px;
+   background-color: #327FC6;
+   padding:50px 0;
+}
+footer>.footer{
+   margin:0 auto;
+   width:40vw;
+   height:130px;
+   display:flex;
+}
+.footer>a{
+   font-size: 15px;
+   color:#dddd;
+}
+
+.footer>a:hover{
+   color:white;
+}
+
+footer>span{
+   display: block;
+   text-align: center;
+   color: #dddd;
+}

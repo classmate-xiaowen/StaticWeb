@@ -1,0 +1,467 @@
+/* 设置通用样式 */
+*{
+   margin:0;
+   padding:0;
+   list-style-type: none;
+   text-decoration: none;
+}
+
+body{
+   /* 宽度占满屏 */
+   width:100vw;
+   overflow-x: hidden;
+}
+
+
+
+/* 网页头部，导航栏 */
+
+
+/* flexBox布局（默认向右排列，代替传统float流） */
+.nav{
+   display: flex;
+   width:100%;
+   height:60px;
+   /* 设置横向排列方式 */
+   justify-content: space-around;
+   /* 设置导航栏下方阴影 */
+   box-shadow: 0 0 3px 0 rgba(93, 89, 89, 0.867);
+}
+
+/* 统一设置导航栏选项样式 */
+.nav>div>span{
+   /* span、li、p...默认是行内元素，由内容撑开，无法设置高度，想设置高度必须设置display:block（盒式元素）*/
+   display: block;
+   height:57px;
+   line-height: 57px;
+   width:100px;
+   text-align: center;
+}
+
+.nav>.nav-middle>span:hover{
+   border-bottom:3px solid rgb(53,168,214);
+   color: rgb(53,168,214);
+}
+
+.nav>.nav-left{
+   font-size: 25px;
+}
+
+/* 水平排列 */
+.nav>.nav-middle{
+   display: flex;
+}
+
+.nav>.nav-right{
+   width:250px;
+   font-size:12px;
+   color: rgba(174, 166, 166, 0.867);
+}
+
+
+/* ---------- */
+
+
+
+
+/* 大轮播图 */
+
+
+.slide{
+   position: relative;
+   height:450px;
+   /* vw 和 vh 均为电脑屏幕为基准，0 ~ 100 即使屏幕长或宽的百分占比 */
+   width:100vw;
+}
+
+.slide>.item{
+   position:relative;
+   width:100vw;
+   height:450px;
+}
+
+/* 逻辑：所有图片均放在一个位置通过控制透明度来逐一显示 */
+.slide>.item>li{
+   position: absolute;
+   top:0; left: 0;
+   height:450px;
+   width:100vw;
+   /* 设置过渡（变化）时间 */
+   transition: 1s;
+}
+
+/* 轮播图左上角 */
+.slide>.item>li>img{
+   height:450px;
+   width:100%;
+   /* 让图片满尺寸完美显示 */
+   object-fit: cover; 
+}
+
+.slide>.item>li>.card{
+   /* 脱离文档流，使其在图片上面 */
+   position: absolute;
+   top:50px;left:200px;
+   color: white;
+}
+
+.slide>.item>li>.card>h1{
+   font-size: 28px;
+}  
+
+.slide>.item>li>.card>span{
+   font-size: 23px;
+}
+
+
+
+/* 轮播图里面的长方体表单 */
+
+.slide>.form{
+   padding:20px 15px;
+   width:520px;
+   height:55px;
+   position: absolute;
+   top:300px;
+   left:400px;
+   /* 毛玻璃特效 */
+   background-color: rgba(220, 211, 211, 0.193); 
+   backdrop-filter: blur(15px);
+}
+
+/* 表单上方点击按钮 */
+
+.slide>.form>.input{
+   width:100%;
+   height:30px;
+   display: flex;
+   text-align: left;
+   /* flexBox布局的属性gap,设置间隔 */
+   gap:35px;
+}
+
+.slide>.form>.search>div{
+   display: none;
+   line-height: 30px;
+   gap:5px;
+}
+
+/* 输入框样式 */
+.slide>.form>.search input[type="search"]{
+   width:90%;
+   height:35px;
+   border-radius:8px;
+   text-indent: 0.5cm;
+   /* 清除搜索框的边框 */
+   border: 0;
+   outline: 0;
+}
+
+
+/* ------------- */
+
+
+
+
+/* 轮播图下面的导航卡片 */
+
+.navCards{
+   width:960px;
+   display: flex;
+   height:80px;
+   margin:0 auto;
+   margin-top:30px;
+   gap:10px;
+}
+
+.navCards>div{
+   width:120px;
+   height:60px;
+   padding: 10px 15px;
+   border: 1px solid #dddd;
+}
+
+/* 鼠标移入的样式（盒子阴影） */
+.navCards>div:hover{
+   box-shadow: 0 3px 3px 2px rgba(213, 208, 208, 0.757);
+}
+
+/* 上 */
+.navCards>div>h1{
+   font-size:20px;
+}
+
+/* 下 */
+.navCards>div>span{
+   font-size: 13px;
+   color: rgba(150, 145, 145, 0.867);
+}
+
+
+
+/* 主页面 */
+
+
+.mainPage{
+   display: flex;
+   width:1000px;
+   min-height:200vh;
+   margin: 0 auto;
+   margin-top: 30px;
+}
+
+
+/* 主页面左边 */
+
+.mainPage>.mainPage-left{
+   width:250px;
+   min-height: 200vh;
+}
+
+/* 主页面左边每一个盒子的样式 */
+.mainPage>.mainPage-left>.card{
+   width:100%;
+   min-height:350px;
+   margin-top:50px;
+   overflow-x: hidden;
+}
+
+/* 主页面左边小轮播图样式 */
+.mainPage>.mainPage-left>.card>.slide{
+   display: flex;
+   width:750px;
+   height:200px;
+   transition: 0.6s;
+}
+
+.mainPage>.mainPage-left>.card>.slide>li{
+   width:250px;
+   height:150px;
+   line-height:30px;
+}
+
+.mainPage>.mainPage-left>.card>.slide>li>span:hover{
+   color: rgb(53,168,214);
+}
+
+/* 盒子头部样式 */
+.mainPage>.mainPage-left>.card>div{
+   display: flex;
+   width: 100%;
+   height:50px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.mainPage>.mainPage-left>.card>div>h1{
+   font-size:18px;
+   color: rgb(30, 29, 29);
+}
+
+.mainPage>.mainPage-left>.card>div>p{
+   font-size: 10px;
+   color: rgba(116, 114, 114, 0.867);
+}
+
+/* ------ */
+
+
+
+/* 控制.card下所有的img大小 */
+
+.mainPage>.mainPage-left>.card img{
+   width:250px;
+   height:150px;
+   object-fit: cover;
+}
+/* card下最近的p元素 */
+.mainPage>.mainPage-left>.card>p{
+   margin-top:20px;
+}
+
+/* card下所有p元素 */
+.mainPage>.mainPage-left>.card p{
+   font-size: 12px;
+}
+
+.mainPage>.mainPage-left>.card p:hover{
+   color:rgb(53,168,214) ;
+}
+
+
+/* 主页面右边 */
+
+.mainPage>.mainPage-right{
+   width:700px;
+   margin-left:50px;
+   min-height:200vh;
+}
+
+
+/* 主页面右边头部 左右布局 */
+.mainPage>.mainPage-right>.head{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width:100%;
+   height:60px;
+   border-bottom: 1px solid #dddd;
+}
+
+/* 左边 */
+.mainPage>.mainPage-right>.head>div{
+   display: flex;
+   width:40%;
+   height:60px;
+   align-items: center;
+   justify-content: space-around;
+}
+
+/* 右边 */
+.mainPage>.mainPage-right>.head>.post{
+   width:125px;
+   height:40px;
+   border-radius: 5px;
+   background-color: rgb(53,168,214);
+   color: white;
+}
+
+/* ------- */
+
+
+
+
+
+
+
+/* 内容的卡片，左右布局 */
+.mainPage>.mainPage-right>.main>.content{
+   width:100%;
+   margin-top: 30px;
+   height:200px;
+   display: flex;
+   justify-content:space-evenly;
+   align-items: center;
+}
+
+.mainPage>.mainPage-right>.main>.content:hover{
+   background-color: rgba(236, 234, 234, 0.716);
+}
+
+.mainPage>.mainPage-right>.main>.content:hover h1{
+   color:rgb(53,168,214);
+}
+
+/* 内容左边图片 */
+.mainPage>.mainPage-right>.main>.content>img{
+   width:200px;
+   height:150px;
+   object-fit: cover;
+}
+
+/* 内容右边 */
+.mainPage>.mainPage-right>.main>.content>div{
+   width:65%;
+   height:200px;
+   display: flex;
+   flex-direction: column;
+   justify-content:space-around;
+}
+
+/* 内容标题 */
+.mainPage>.mainPage-right>.main>.content>div>h1{
+   font-size:20px;
+}
+
+/* 内容详细 */
+.mainPage>.mainPage-right>.main>.content>div p{
+   color: rgba(154, 147, 147, 0.97);
+}
+
+/* 内容底部 */
+.mainPage>.mainPage-right>.main>.content>div>.bottom{
+   display: flex;
+   justify-content: space-between;
+   font-size: 10px;
+}
+
+/* 设置bottom选择器下第二个p元素的样式 */
+.mainPage>.mainPage-right>.main>.content>div>.bottom>p:nth-child(2){
+   color: rgb(53,168,214)
+}
+
+.mainPage>.mainPage-right>.main>.content>div>.bottom>p>i{
+   color: rgb(53,168,214);
+}
+
+
+/* ---- */
+
+
+
+/* 主页面下面分页 */
+.mainPage>.mainPage-right>.bottomList{
+   /* 居中 */
+   margin:0 auto;
+   margin-top: 50px;
+   width:400px;
+   height:30px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.mainPage>.mainPage-right>.bottomList>.card{
+   width:150px;
+   height:30px;
+   display: flex;
+   gap:15px;
+}
+
+.mainPage>.mainPage-right>.bottomList>.card>div{
+   width:30px;
+   height:25px;
+   color: white;
+   /* 水平、垂直居中 */
+   text-align: center;
+   line-height: 25px;
+
+   border-radius: 5px;
+   background-color:rgb(53,168,214) ;
+}
+
+.footer{
+   margin-top: 100px;
+   width:100vw;
+   height:350px;
+   background-color: #2c2929;
+   text-align: center;
+}
+.footer>.footer-top{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 0 auto;
+   width:80vw;
+   height:250px;
+}
+
+.footer>.footer-top>div{
+   width:200px;
+   height:150px;
+   text-align: center;
+}
+
+.footer>.footer-top>div>span{
+   font-size: 15px;
+   color: white;
+}
+
+.footer>.footer-top>div>p{
+   margin-top:10px;
+   font-size: 15px;
+   color:rgba(157, 155, 155, 0.867);
+}
+
+.footer>.footer-top>div>p:hover{
+   color:rgb(53,168,214);
+}

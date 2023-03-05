@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>联赛</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<!-- 头部导航栏 -->
+   <header>
+      <div class="top">
+         <div>
+            <h1>体育联赛</h1>
+            <p>2022赛季</p>
+         </div>
+         <div>
+            <p>无障碍浏览</p>
+            <div style="height:50px;width:50px;border-radius: 50%;background-color:#dddd;margin:50px 0 0 30px;"> </div>
+         </div>
+      </div>
+      <div class="middle">
+         <div>
+            <span>体育</span>
+            <span>推荐</span>
+            <span>高校赛</span>
+            <span style="background-color:red">英超</span>
+            <span>世界杯</span>
+            <span>社区</span>
+         </div>
+      </div>
+      <div class="bottom">
+         <div class="bottom_card">
+            <span>综合榜</span>
+            <span>热点新闻</span>
+            <span>比赛进程</span>
+            <span>排行榜</span>
+         </div>
+      </div>
+   </header>
+
+   <!-- 卡片 与首页类似 参考首页代码 -->
+   <div class="nav">
+      <!-- 按钮 -->
+      <div class="turn"> < </div>
+      <!-- 容器 -->
+      <div class="over">
+         <div class="playback">
+            <div class="play_left">
+               <p>已结束</p>
+               <p>飞机队</p>
+               <p>热火队</p>
+            </div>
+            <div class="play_right">
+               <p>11-29</p>
+               <p>6</p>
+               <p>3</p>
+            </div>
+         </div>
+         <div class="playback">
+            <div class="play_left">
+               <p>已结束</p>
+               <p>创新队</p>
+               <p>热火队</p>
+            </div>
+            <div class="play_right">
+               <p>11-29</p>
+               <p>1</p>
+               <p>3</p>
+            </div> 
+         </div>
+         <div class="playback">
+            <div class="play_left">
+               <p>已结束</p>
+               <p>飞机队</p>
+               <p>森林队</p>
+            </div>
+            <div class="play_right">
+               <p>11-29</p>
+               <p>2</p>
+               <p>1</p>
+            </div>
+         </div>
+         <div class="playback" style="border:1px solid red">
+            <div class="play_left">
+               <p>在直播</p>
+               <p>路人队</p>
+               <p>热火队</p>
+            </div>
+            <div class="play_right">
+               <p>11-30</p>
+               <p>2</p>
+               <p>4</p>
+            </div>
+         </div>
+         <div class="playback">
+            <div class="play_left">
+               <p>未开始</p>
+               <p>接力队</p>
+               <p>路人队</p>
+            </div>
+            <div class="play_right">
+               <p>12-01</p>
+               <p>1</p>
+               <p>3</p>
+            </div>
+         </div>
+         <div class="playback">
+            <div class="play_left">
+               <p>未开始</p>
+               <p>飞机队</p>
+               <p>热火队</p>
+            </div>
+            <div class="play_right">
+               <p>12-02</p>
+               <p>6</p>
+               <p>3</p>
+            </div>
+         </div>
+      </div>
+      <div class="turn"> > </div>
+   </div>
+
+
+   <!-- 主页面 左右结构--> 
+   <main>
+         <!-- 主页面左边 -->
+      <div class="main-left">
+         <!-- 轮播图 -->
+         <div class="lunbo-photo">
+            <button id="left_turn"> < </button>
+            <div class="move_card">
+               <ul class="move">
+                  <li>
+                     <a href="">
+                        <img src="./images/lunbo/lunboPhoto-1.jpg" />
+                        <span>正在直播足球比赛</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <img src="./images/lunbo/lunboPhoto-2.jpg" />
+                        <span>世界杯今晚火热继续！！！</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <img src="./images/lunbo/lunboPhoto-3.jpg" />
+                        <span>就在昨晚，球星的一记世界波，绝杀</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <img src="./images/lunbo/lunboPhoto-4.jpg" />
+                        <span>足球已成为大众热门最高之一的运动</span>
+                     </a>
+                  </li>
+               </ul>								
+            </div>
+            <button id="right_turn"> > </button>
+         </div>
+         <!-- 轮播图下面 -->
+         <div class="nav-title">
+            <span>热门</span><span>头条</span><span>足球</span><span>分析</span><span>世界杯</span>
+         </div>
+         <!-- 新闻列表 -->
+         <div class="new-content">
+            <!-- 每一个新闻卡片 new 左右解构-->
+            <div class="new">
+               <!-- 左 -->
+               <img src="./images/new/new-01.jpg" alt="">
+               <!-- 右 -->
+               <div class="content">
+                  <h1>C罗与B费梦幻联动，总裁虚幻一枪进球庆祝。</h1>
+                  <p>她们又讲你怎样喜欢拿着一根短棍站在 桌上摹仿音乐会的导师，那才是你福星高照的时候，但已往的教训，亲口尝味，在这道上遭受的.....</p>
+                  <p>2022年12月01日</p>
+               </div>
+            </div>
+            <div class="new">
+               <img src="./images/new/new-1.jpg" alt="">
+               <div class="content">
+                  <h1>今晚23点：H组晋级赛来袭。</h1>
+                  <p>她们又讲你怎样喜欢拿着一根短棍站在 桌上摹仿音乐会的导师，那才是你福星高照的时候，但已往的教训，亲口尝味，在这道上遭受的.....</p>
+                  <p>2022年12月01日</p>
+               </div>
+            </div>
+            <div class="new">
+               <img src="./images/lunbo/lunboPhoto-2.jpg" alt="">
+               <div class="content">
+                  <h1>记者：世界杯夺冠大热首秀，现场气氛拉满！</h1>
+                  <p>她们又讲你怎样喜欢拿着一根短棍站在 桌上摹仿音乐会的导师，那才是你福星高照的时候，但已往的教训，亲口尝味，在这道上遭受的.....</p>
+                  <p>2022年12月01日</p>
+               </div>
+            </div>
+            <div class="new">
+               <img src="./images/lunbo/lunboPhoto-3.jpg" alt="">
+               <div class="content">
+                  <h1>C罗与B费梦幻联动，总裁虚幻一枪进球庆祝。</h1>
+                  <p>她们又讲你怎样喜欢拿着一根短棍站在 桌上摹仿音乐会的导师，那才是你福星高照的时候，但已往的教训，亲口尝味，在这道上遭受的.....</p>
+                  <p>2022年12月02日</p>
+               </div>
+            </div>
+            <div class="new">
+               <img src="./images/new/new-02.jpg" alt="">
+               <div class="content">
+                  <h1>今日世界杯：今晚德国VS西班牙，德国是否能背水一战。</h1>
+                  <p>她们又讲你怎样喜欢拿着一根短棍站在 桌上摹仿音乐会的导师，那才是你福星高照的时候，但已往的教训，亲口尝味，在这道上遭受的.....</p>
+                  <p>2022年12月02日</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 主页面右边排行榜 -->
+      <div class="main-right">
+         <div class="credit-card">
+            <div class="credit-title">
+               <h1>综合榜 | 分数排行榜</h1>
+            </div>
+            <div class="credit-name">
+               <span>排名</span><span>队名</span><span>比分</span><span>分数</span>
+            </div>
+            <div class="credit-content">
+               <div>
+                  <p>1</p>
+                  <p>2</p>
+                  <p>3</p>
+                  <p>4</p>
+                  <p>5</p>
+               </div>
+               <div>
+                  <p>飞机队</p>
+                  <p>热火队</p>
+                  <p>天竞队</p>
+                  <p>创新队</p>
+                  <p>奋战队</p>
+               </div>
+               <div>
+                  <p>6：1</p>
+                  <p>4：2</p>
+                  <p>3：2</p>
+                  <p>2：2</p>
+                  <p>1：0</p>
+               </div>
+               <div>
+                  <p>86</p>
+                  <p>65</p>
+                  <p>45</p>
+                  <p>32</p>
+                  <p>21</p>
+               </div>
+            </div>
+         </div>
+         <div class="video-top"><h1>精彩回放</h1><p>自动播放<input type="checkbox"></p>
+         </div>
+         <!-- 视频代码 -->
+         <video src="" controls="controls" loop="loop" autoplay="autoplay" muted="muted"
+         style="width:100%; height:300px;"></video>
+         <div style="width:100%;height:50px;line-height:50px;font-size:13px;background-color:rgb(210, 204, 204);text-align:center">让足球翻滚在绿茵的草坪上，任由球手将他描绘成一幅作品。</div>
+      </div>
+   </main>
+
+   	<!-- 底部 -->
+   <footer>
+		<div class="footer">
+			<a href="">关于体育</a>
+			|
+			<a href="">隐私政策</a>
+			|
+			<a href="">开放平台</a>
+			|
+			<a href="">广告服务</a>
+			|
+			<a href="">保密协议</a>
+			|
+			<a href="">投诉政策</a>
+			|
+			<a href="">服务协议</a>
+			|
+			<a href="">推荐服务</a>
+		</div>
+		<span>仅供学习交流使用</span>
+	</footer>
+</body>
+<script src="script.js"></script>
+</html>
